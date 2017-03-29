@@ -19,7 +19,7 @@ module.exports = {
         // allow debugger during development
         'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
         // 4 space indentation
-        'indent': ['error', 4],
+        'indent': ['error', 2],
         // Allow extra semicolons
         'semi': 0
     }
