@@ -1,7 +1,7 @@
 <template>
-    <div id="app">
+    <div>
         <img src="./assets/logo.png">
-        <h1>{{ msg }}</h1>
+        <h1>{{ msg }}, {{ name }}</h1>
         <h2>Essential Links</h2>
         <ul>
             <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -26,12 +26,13 @@ export default {
         return {
             msg: 'Welcome to Your Vue.js App'
         }
-    }
+    },
+    props: ['name']
 }
 </script>
 
-<style>
-#app {
+<style scoped>
+div {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
